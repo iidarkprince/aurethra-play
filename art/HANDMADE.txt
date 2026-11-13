@@ -1,0 +1,9 @@
+isai.png
+marek.png
+toren.png
+resident_0.png
+resident_1.png
+resident_2.png
+resident_3.png
+resident_4.png
+resident_5.png
