@@ -1170,7 +1170,7 @@ vec2 getTexRes ()
     #if TEXTURE_COUNT == 1
     float texId = 0.0;
     #else
-    float texId = outTexDatum;
+    float texId = floor(outTexDatum + 0.5);
     #endif
     #pragma phaserTemplate(texIdProcess)
     vec2 texRes = vec2(0.0);
@@ -1189,8 +1189,8 @@ vec4 getTexture (vec2 texCoord)
     #if TEXTURE_COUNT == 1
     return texture2D(uMainSampler[0], texCoord);
     #else
-    if (outTexDatum == 0.0) return texture2D(uMainSampler[0], texCoord);
-    #define ELSE_TEX_CASE(INDEX) else if (outTexDatum == float(INDEX)) return texture2D(uMainSampler[INDEX], texCoord);
+    if (floor(outTexDatum + 0.5) == 0.0) return texture2D(uMainSampler[0], texCoord);
+    #define ELSE_TEX_CASE(INDEX) else if (floor(outTexDatum + 0.5) == float(INDEX)) return texture2D(uMainSampler[INDEX], texCoord);
     #pragma phaserTemplate(texIdProcess)
     else return vec4(0.0, 0.0, 0.0, 0.0);
     #endif
