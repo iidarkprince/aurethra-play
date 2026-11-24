@@ -1,0 +1,2 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./main-lrtxKPK3.js","./questLibrary-PMBJke72.js","./mapLibrary-RPy7pM4f.js","./materials-B6eToBry.js","./look-BiuIxqtC.js","./main-AQSFpNz6.css"])))=>i.map(i=>d[i]);
+import{n as e,t}from"./preload-helper-BewMJvLu.js";e().then(()=>t(()=>import(`./main-lrtxKPK3.js`),__vite__mapDeps([0,1,2,3,4,5]),import.meta.url));

@@ -1,0 +1,2 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./main-BY4ReQr_.js","./materials-B6eToBry.js","./mapLibrary-RPy7pM4f.js","./terrain-wD7a1u1A.js","./main-mRNvEgGK.css"])))=>i.map(i=>d[i]);
+import{n as e,t}from"./preload-helper-BewMJvLu.js";e().then(()=>t(()=>import(`./main-BY4ReQr_.js`),__vite__mapDeps([0,1,2,3,4]),import.meta.url));
